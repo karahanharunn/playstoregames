@@ -20,6 +20,7 @@
   height: 48;
   display: flex;
   align-items: center;
+  overflow-x: auto;
 }
 .button {
   box-sizing: initial;
@@ -37,6 +38,7 @@
   border: none;
   min-width: 70px;
   padding: 0 14px;
+  position: relative;
 }
 .button:hover {
    background-color:  rgba(0,0,0,0.05);
