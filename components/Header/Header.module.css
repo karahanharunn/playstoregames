@@ -36,8 +36,10 @@
   background-color: white;
   border: none;
   min-width: 70px;
-  position: relative;
   padding: 0 14px;
+}
+.button:hover {
+   background-color:  rgba(0,0,0,0.05);
 }
 .icon {
   display: flex;
@@ -47,15 +49,18 @@
   border-radius: 4px;
   margin: 0 10px;
   height: 30px;
+  padding: 0;
 }
 .title {
-  color: #737373;
-  display: inline;
+  border-color: #333333;
+  color: #333333;
+  font-family: Roboto;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   gap: normal;
   line-height: 48px;
-  font-family: inherit;
+  padding: 0px 14px;
+  text-align: left;
 }
 .container {
   border-radius: 3px;

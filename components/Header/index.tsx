@@ -45,8 +45,18 @@ export default function Header({}: Props): ReactElement {
                 <Menu Open={OpenSubCategories} />
               </button>
               <div className={styles.border}></div>
-              <button className={styles.button}>
-                <span className={styles.title}>Home</span>
+              <button
+                style={{
+                  borderBottom: "4px solid #689f38",
+                  marginBottom: 2,
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+                className={styles.button}
+              >
+                <span style={{ fontWeight: 700 }} className={styles.title}>
+                  Home
+                </span>
               </button>
               <button className={styles.button}>
                 <span className={styles.title}>Top charts</span>
