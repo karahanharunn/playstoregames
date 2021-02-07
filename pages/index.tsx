@@ -1,10 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Header from "../components/Header/Header";
-import Title from "../components/Title/Title";
-import Layout from "../components/Layout/Layout";
-import Section from "../components/Section/Section";
+
 import { games } from "../shared/constant";
+import { Header, Layout, Section, Title } from "../components";
 
 export default function Home() {
   return (
@@ -23,10 +21,13 @@ export default function Home() {
         <Layout>
           <Section
             TopChildren={<Title title="New & updated games" />}
-           
             games={games}
           />
-          <Section  subTitle="Lightweight games" TopChildren={<Title title="Low on space" />} games={games} />
+          <Section
+            subTitle="Lightweight games"
+            TopChildren={<Title title="Low on space" />}
+            games={games}
+          />
         </Layout>
       </main>
 

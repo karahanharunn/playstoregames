@@ -1,6 +1,6 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import useWindowSize from "../../hooks/useWindowSize";
-import Card from "../ImageComponent/Card";
+import Card from "../Card";
 import styles from "./Section.module.css";
 interface Props {
   TopChildren: React.ReactNode;

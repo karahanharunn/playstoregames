@@ -1,7 +1,6 @@
 import React, { ReactElement, useState } from "react";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import { Button } from "@material-ui/core";
 import styles from "./Header.module.css";
 import classNames from "classnames";
 import Question from "../icons/Question";
@@ -39,6 +38,7 @@ export default function Header({}: Props): ReactElement {
               <button
                 onClick={() => setOpenSubCategories(!OpenSubCategories)}
                 className={styles.button}
+                style={{ background: OpenSubCategories && "#e5e5e5" }}
               >
                 <span className={styles.title}>Subcategories</span>
                 <ChevronBottom stroke="black" fill="black" />
